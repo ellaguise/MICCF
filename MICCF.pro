@@ -1,4 +1,4 @@
-FUNCTION MICCF, ep_x, f_x, ep_y, f_y, lags, reverse=reverse
+FUNCTION MICCF, ep_x, f_x, ep_y, f_y, lags
 
 ;  NAME:
 ;       MICCF
@@ -20,10 +20,6 @@ FUNCTION MICCF, ep_x, f_x, ep_y, f_y, lags, reverse=reverse
 ;
 ;    LAGS:    An n-element vector containing the range of lags being explored
 ;
-; KEYWORD PARAMETERS:
-;     REVERSE:        If set to a non-zero value, the responding light curve has been
-;                     interpolated. If set to zero then the driving light curve has been
-;                     interpolated.
 
 
   ; set up the necessary arrays
