@@ -4,11 +4,16 @@ import numpy as np
 def M_ICCF(x1, y1, x2, y2, lags):
     
     """
-    This function computes a modified interpolated cross correlation of light curves, where only one light curve is interpolated and the epochs matching that of the second light curve are used to compute the cross correlation function for a different range of lags
+    This function computes a modified interpolated cross correlation of light curves, 
+    where only one light curve is interpolated and the epochs matching that of the 
+    second light curve are used to compute the cross correlation function for a 
+    different range of lags
 
     PARAMETERS:
-	x1:    An n-element vector containing the epochs of the first light curve (i.e. the interpolated light curve)
-	y1:    An n-element vector containing the fluxes of the first light curve (i.e. the interpolated light curve)
+	x1:    An n-element vector containing the epochs of the first light curve 
+		(i.e. the interpolated light curve)
+	y1:    An n-element vector containing the fluxes of the first light curve 
+		(i.e. the interpolated light curve)
 	x2:    An n-element vector containing the epochs of the second light curve
 	y2:    An n-element vector containing the fluxes of the second light curve
 	LAGS:  An n-element vector containing the range of lags being explored
